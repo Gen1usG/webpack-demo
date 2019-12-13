@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 module.exports = {
     mode: 'development',
     entry: './src/index.js',
@@ -14,6 +16,10 @@ module.exports = {
             title: 'webpack-demo',
             // 生成html的模板
             template: 'src/index.html',
-        })
-    ]
+        }),
+    ],
+    module: {
+        rules: [
+        ]
+    },
 };
