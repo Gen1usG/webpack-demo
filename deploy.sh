@@ -1,6 +1,6 @@
 yarn build &&
-git checkout gh-pages &&
-rm -rf !dist && 
+git checkout gh-page &&
+rm -rf --preserve-root ./dist && 
 mv dist/* ./ && 
 rm dist && 
 git add . && 
